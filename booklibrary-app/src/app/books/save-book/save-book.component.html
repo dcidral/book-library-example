@@ -1,0 +1,15 @@
+<mat-form-field>
+  <mat-label>Number</mat-label>
+  <input matInput [(ngModel)]="book.number">
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Title</mat-label>
+  <input matInput [(ngModel)]="book.title">
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Author</mat-label>
+  <input matInput [(ngModel)]="book.author">
+</mat-form-field>
+
+<button mat-button (click)="save()">Save</button>
+

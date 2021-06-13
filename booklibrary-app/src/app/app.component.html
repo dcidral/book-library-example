@@ -1,0 +1,18 @@
+<ng-container>
+
+
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav opened mode="side" [fixedInViewport]="true" [fixedTopGap]="0"
+      [fixedBottomGap]="0">
+      <mat-list>
+        <mat-list-item routerLink="/edit-book">Add Book</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item routerLink="/">Show Books</mat-list-item>
+      </mat-list>
+    </mat-sidenav>
+    <mat-sidenav opened mode="side" position="end">End content</mat-sidenav>
+
+    <router-outlet></router-outlet>
+  </mat-sidenav-container>
+
+</ng-container>
